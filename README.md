@@ -1,0 +1,2 @@
+# Recycler-TypedAdapter-Android
+
