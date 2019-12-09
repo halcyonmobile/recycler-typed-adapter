@@ -1,4 +1,4 @@
-# A type based RecyclerView Adapter
+# A type based RecyclerView Adapter [![Build Status](https://travis-ci.com/halcyonmobiledev/recycler-typed-adapter.svg?branch=master)](https://travis-ci.com/halcyonmobiledev/recycler-typed-adapter)
 
 ## Scope
 
