@@ -14,7 +14,7 @@ items and can be reused in multiple places with different factories setup.
 
 ## Setup
 
-**Latest version**: 0.1.0.11
+**Latest version**: 0.1.0.12
 
 ### Make sure that jcenter is added to repositories
 
