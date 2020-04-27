@@ -62,7 +62,7 @@ abstract class TypedRecyclerViewAdapter<RecyclerItemType : RecyclerItem>(diffCal
     }
 
     public override fun getItem(position: Int): RecyclerItemType? =
-        if (position in 0 until itemCount) super.getItem(position) else null
+        if (position in 0 until super.getItemCount()) super.getItem(position) else null
     // endregion Adapter methods
 
     /**
