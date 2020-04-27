@@ -61,7 +61,8 @@ abstract class TypedRecyclerViewAdapter<RecyclerItemType : RecyclerItem>(diffCal
         holder.binding.executePendingBindings()
     }
 
-    public override fun getItem(position: Int): RecyclerItemType? = super.getItem(position)
+    public override fun getItem(position: Int): RecyclerItemType? =
+        if (position in 0 until itemCount) super.getItem(position) else null
     // endregion Adapter methods
 
     /**
