@@ -17,6 +17,7 @@ items and can be reused in multiple places with different factories setup.
 *Latest version:* ![Latest release](https://img.shields.io/github/v/release/halcyonmobile/recycler-typed-adapter)
 
 ### Ensure you have the HalcyonMobile GitHub Packages as a repository
+```gradle
 // top level build.gradle
 {
 allprojects {
@@ -31,6 +32,8 @@ allprojects {
         }
     }
 }
+```
+
 Note: you only need one maven declaration with "halcyonmobile/{specific}", every other package will be accessable.
 
 
