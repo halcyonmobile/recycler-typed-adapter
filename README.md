@@ -14,15 +14,26 @@ items and can be reused in multiple places with different factories setup.
 
 ## Setup
 
-**Latest version**: 0.1.0.13
+*Latest version:* ![Latest release](https://img.shields.io/github/v/release/halcyonmobile/recycler-typed-adapter)
 
-### Make sure that jcenter is added to repositories
-
-```groovy
-repositories {
-    jcenter()
+### Ensure you have the HalcyonMobile GitHub Packages as a repository
+// top level build.gradle
+{
+allprojects {
+    repositories {
+        // ...
+        maven {
+            url "https://maven.pkg.github.com/halcyonmobile/android-common-extensions"
+            credentials {
+                username = System.getenv("GITHUB_USERNAME")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
 }
-```
+Note: you only need one maven declaration with "halcyonmobile/{specific}", every other package will be accessable.
+
+
 
 ### Add the library dependency
 
