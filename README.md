@@ -19,7 +19,7 @@ items and can be reused in multiple places with different factories setup.
 ### Ensure you have the HalcyonMobile GitHub Packages as a repository
 ```gradle
 // top level build.gradle
-{
+//..
 allprojects {
     repositories {
         // ...
