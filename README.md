@@ -25,10 +25,6 @@ allprojects {
         // ...
         maven {
             url "https://maven.pkg.github.com/halcyonmobile/android-common-extensions"
-            credentials {
-                username = System.getenv("GITHUB_USERNAME")
-                password = System.getenv("GITHUB_TOKEN")
-            }
         }
     }
 }
