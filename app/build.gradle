@@ -48,7 +48,7 @@ dependencies {
 
     implementation "androidx.lifecycle:lifecycle-extensions:2.1.0"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0"
-    implementation "androidx.lifecycle:lifecycle-common-java8:2.1.0"
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.4.0"
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
