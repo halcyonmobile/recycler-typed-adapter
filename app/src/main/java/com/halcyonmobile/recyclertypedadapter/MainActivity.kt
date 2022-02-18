@@ -5,7 +5,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.halcyonmobile.recyclertypedadapter.items.header.HeaderRecyclerItemFactory
 import com.halcyonmobile.recyclertypedadapter.items.user.UserRecyclerItem
 import com.halcyonmobile.recyclertypedadapter.items.user.UserRecyclerItemFactory
@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        val viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
+        val provider = ViewModelProvider(this)
+        val viewModel = provider[MainViewModel::class.java]
 
         val adapter = RecyclerAdapter()
 
